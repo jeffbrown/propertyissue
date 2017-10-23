@@ -1,10 +1,10 @@
 package propertyissue
 
-import grails.test.mixin.TestFor
+import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-@TestFor(Widget)
-class WidgetSpec extends Specification {
+class WidgetSpec extends Specification implements DomainUnitTest<Widget> {
+
 
     void "test persistentProperties"() {
         when:
