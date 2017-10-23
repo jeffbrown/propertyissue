@@ -1,0 +1,4 @@
+package propertyissue
+
+class SomeClass {
+}
